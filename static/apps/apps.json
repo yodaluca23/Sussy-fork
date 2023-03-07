@@ -46,6 +46,11 @@
       "url": "/apps/novnc/vnc.html"
   },
   {
+    "name": "HiMovies",
+    "icon": "/apps/images/himovies.png",
+    "url": "https://himovies.top"
+  },
+  {
       "name": "Geforce Now",
       "icon": "/apps/images/gfnow.png",
       "url": "/data-load-uv.html#aHR0cHM6Ly9wbGF5LmdlZm9yY2Vub3cuY29t"

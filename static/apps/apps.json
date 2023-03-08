@@ -58,5 +58,11 @@
       "name": "Y8",
       "icon": "/apps/images/y8.png",
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueTguY29t"
+  },
+  {
+      "name": "More Games",
+      "icon": "/apps/images/moregames.png",
+      "url": "https://example.com",
+      "isMoreStuff": "true"
   }
 ]

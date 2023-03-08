@@ -71,14 +71,14 @@ function Tab() {
           icon="https://www.drive.google.com/favicon.ico"
           title="Google Drive"
         />
-        <ChangeIcon icon="https://login.schoology.com/sites/all/themes/schoology_theme/favicon.ico" title="Schoology" />
+        <ChangeIcon icon="https://kleinisd.schoology.com/sites/all/themes/schoology_theme/favicon.ico" title="Schoology" />
         <ChangeIcon
           icon="https://skyward.kleinisd.net/favicon.ico"
           title="Student Access"
         />
         <ChangeIcon icon="https://cdn.classlink.com/production/launchpad/resources/images/favicon/favicon-32x32.png" title="My Apps" />
         <ChangeIcon
-          icon="https://web.kamihq.com/web/images/icon256.png"
+          icon="https://web.kamihq.com/web/images/icon19.png"
           title="Kami"
         />
         <ChangeIcon

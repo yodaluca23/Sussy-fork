@@ -35,10 +35,9 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20="
   },
   {
-      "name": "More Games",
-      "icon": "/apps/images/moregames.png",
-      "url": "https://example.com",
-      "isMoreStuff": "true"
+      "name": "Instagram",
+      "icon": "/apps/images/insta.png",
+      "url": "https://www.instagram.com",
   },
   {
       "name": "NoVNC",

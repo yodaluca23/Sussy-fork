@@ -1,8 +1,8 @@
 [
   {
-    "name": "YouTube",
-    "icon": "/apps/images/yt.png",
-    "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueW91dHViZS5jb20="
+      "name": "YouTube",
+      "icon": "/apps/images/yt.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueW91dHViZS5jb20="
   },
   {
       "name": "Spotify",
@@ -31,7 +31,7 @@
   },
   {
       "name": "Pinterest",
-      "icon": "/apps/images/Pint.png",
+      "icon": "/apps/images/pint.png",
       "url": "https://www.pinterest.com",
   },
   {

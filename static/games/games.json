@@ -26,17 +26,17 @@
     },
     {
         "name": "Stickwar",
-        "icon": "/games/images/stickwar",
+        "icon": "/games/images/stickwar.png",
         "url": "ruffle://stickwar.swf"
     },
     {
         "name": "Portal",
-        "icon": "/games/images/portal",
+        "icon": "/games/images/portal.jpeg",
         "url": "ruffle://portal2d.swf"
     },
     {
         "name": "Portal 2D",
-        "icon": "/games/images/portal2d",
+        "icon": "/games/images/portal.jpeg",
         "url": "ruffle://portal.swf"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
         "name": "Learn To Fly",
-        "icon": "/games/images/learn2fly",
+        "icon": "/games/images/learnfly.jpg",
         "url": "ruffle://learn2fly.swf"
     },
     {
@@ -71,12 +71,12 @@
     },
     {
         "name": "Backcountry",
-        "icon": "/games/images/",
+        "icon": "/games/images/backcou.png",
         "url": "gs://backcountry"
     },
     {
         "name": "Black Hole Square",
-        "icon": "gs://blackholesquare/icon.png",
+        "icon": "/games/images/blkhole.png",
         "url": "gs://blackholesquare"
     },
     {
@@ -91,12 +91,12 @@
     },
     {
         "name": "Edge Not Found",
-        "icon": "/games/images/",
+        "icon": "/games/images/edge.jpeg",
         "url": "gs://edgenotfound"
     },
     {
         "name": "Packabunchas",
-        "icon": "/games/images/",
+        "icon": "/games/images/packa.png",
         "url": "gs://packabunchas"
     },
     {
@@ -256,7 +256,7 @@
     },
     {
         "name": "Vex Backup Utility",
-        "icon": "about:blank",
+        "icon": "/games/images/vexback.jpg",
         "url": "gs://vexbackuputil"
     },
     {

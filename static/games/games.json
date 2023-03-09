@@ -51,7 +51,7 @@
     },
     {
         "name": "Breaklock",
-        "icon": "/games/images/breaklock.png",
+        "icon": "/games/images/breaklock.jpg",
         "url": "gs://breaklock"
     },
     {
@@ -231,7 +231,7 @@
     },
     {
         "name": "2048",
-        "icon": "/games/images/2048.png",
+        "icon": "/games/images/2048.jpg",
         "url": "gs://2048"
     },
     {

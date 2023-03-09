@@ -32,7 +32,7 @@
   {
       "name": "Pinterest",
       "icon": "/apps/images/pint.png",
-      "url": "https://www.pinterest.com",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cucGludGVyZXN0LmNvbQ==",
   },
   {
       "name": "CoolMathGames",
@@ -53,7 +53,7 @@
   {
       "name": "HiMovies",
       "icon": "/apps/images/himovies.png",
-      "url": "https://himovies.top"
+      "url": "/data-load-uv.html#aHR0cHM6Ly9oaW1vdmllcy50b3A="
   },
   {
       "name": "Geforce Now",

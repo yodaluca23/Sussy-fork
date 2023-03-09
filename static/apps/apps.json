@@ -30,9 +30,34 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcHA="
   },
   {
+      "name": "HiMovies",
+      "icon": "/apps/images/himovies.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly9oaW1vdmllcy50b3A="
+  },
+  {
       "name": "Pinterest",
       "icon": "/apps/images/pint.png",
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cucGludGVyZXN0LmNvbQ=="
+  },
+  {
+      "name": "Netflix",
+      "icon": "/apps/images/netflix.jpeg",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cubmV0ZmxpeC5jb20="
+  },
+  {
+      "name": "Amazon",
+      "icon": "/apps/images/amaz.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuYW1hem9uLmNvbQ=="
+  },
+  {
+      "name": "Tinder",
+      "icon": "/apps/images/tinder.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly90aW5kZXIuY29t"
+  },
+  {
+      "name": "Pandora",
+      "icon": "/apps/images/pandora.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cucGFuZG9yYS5jb20="
   },
   {
       "name": "CoolMathGames",
@@ -43,11 +68,6 @@
       "name": "NoVNC",
       "icon": "/apps/images/novnc.png",
       "url": "/apps/novnc/vnc.html"
-  },
-  {
-      "name": "HiMovies",
-      "icon": "/apps/images/himovies.png",
-      "url": "/data-load-uv.html#aHR0cHM6Ly9oaW1vdmllcy50b3A="
   },
   {
       "name": "Geforce Now",

@@ -45,9 +45,14 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cubmV0ZmxpeC5jb20="
   },
   {
-      "name": "Amazon",
-      "icon": "/apps/images/amaz.png",
-      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuYW1hem9uLmNvbQ=="
+      "name": "Geforce Now",
+      "icon": "/apps/images/gfnow.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly9wbGF5LmdlZm9yY2Vub3cuY29t"
+  },
+  {
+      "name": "Quora",
+      "icon": "/apps/images/quora.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cucXVvcmEuY29t"
   },
   {
       "name": "Tinder",
@@ -55,9 +60,24 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly90aW5kZXIuY29t"
   },
   {
+      "name": "Amazon",
+      "icon": "/apps/images/amaz.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuYW1hem9uLmNvbQ=="
+  },
+  {
       "name": "Pandora",
       "icon": "/apps/images/pandora.png",
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cucGFuZG9yYS5jb20="
+  },
+  {
+      "name": "DropBox",
+      "icon": "/apps/images/drop.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuZHJvcGJveC5jb20="
+  },
+  {
+      "name": "Xbox xCloud",
+      "icon": "/apps/images/xbxcld.webp",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueGJveC5jb20vcGxheQ=="
   },
   {
       "name": "CoolMathGames",
@@ -65,14 +85,14 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20="
   },
   {
+      "name": "WebCam Toy",
+      "icon": "/apps/images/wbtoy.jpg",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93ZWJjYW10b3kuY29t"
+  },
+  {
       "name": "NoVNC",
       "icon": "/apps/images/novnc.png",
       "url": "/apps/novnc/vnc.html"
-  },
-  {
-      "name": "Geforce Now",
-      "icon": "/apps/images/gfnow.png",
-      "url": "/data-load-uv.html#aHR0cHM6Ly9wbGF5LmdlZm9yY2Vub3cuY29t"
   },
   {
       "name": "Y8",

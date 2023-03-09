@@ -31,12 +31,12 @@
     },
     {
         "name": "Portal",
-        "icon": "/games/images/portal.jpeg",
+        "icon": "/games/images/portal.jpg",
         "url": "ruffle://portal2d.swf"
     },
     {
         "name": "Portal 2D",
-        "icon": "/games/images/portal.jpeg",
+        "icon": "/games/images/portal.jpg",
         "url": "ruffle://portal.swf"
     },
     {
@@ -91,12 +91,12 @@
     },
     {
         "name": "Edge Not Found",
-        "icon": "/games/images/edge.jpeg",
+        "icon": "/games/images/edge.jpg",
         "url": "gs://edgenotfound"
     },
     {
         "name": "Packabunchas",
-        "icon": "/games/images/packa.png",
+        "icon": "/games/images/packa.jpeg",
         "url": "gs://packabunchas"
     },
     {

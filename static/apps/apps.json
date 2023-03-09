@@ -35,19 +35,15 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20="
   },
   {
-      "name": "Pinterest",
-      "icon": "/apps/images/Pint.png",
-      "url": "https://www.pinterest.com",
+      "name": "More Games",
+      "icon": "/apps/images/moregames.png",
+      "url": "https://example.com",
+      "isMoreStuff": "true"
   },
   {
       "name": "NoVNC",
       "icon": "/apps/images/novnc.png",
       "url": "/apps/novnc/vnc.html"
-  },
-  {
-    "name": "HiMovies",
-    "icon": "/apps/images/himovies.png",
-    "url": "https://himovies.top"
   },
   {
       "name": "Geforce Now",
@@ -58,11 +54,5 @@
       "name": "Y8",
       "icon": "/apps/images/y8.png",
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueTguY29t"
-  },
-  {
-      "name": "More Games",
-      "icon": "/apps/images/moregames.png",
-      "url": "https://example.com",
-      "isMoreStuff": "true"
   }
 ]

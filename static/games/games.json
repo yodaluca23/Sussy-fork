@@ -20,6 +20,31 @@
         "url": "gs://astray"
     },
     {
+        "name": "DuckLife 1",
+        "icon": "/games/images/dl1.png",
+        "url": "ruffle://dl1.swf"
+    },
+    {
+        "name": "DuckLife 2: World Champion",
+        "icon": "/games/images/dl2world.png",
+        "url": "ruffle://dl2world.swf"
+    },
+    {
+        "name": "DuckLife 3: Evolution",
+        "icon": "/games/images/dl3evol.png",
+        "url": "ruffle://dl3evol.swf"
+    },
+    {
+        "name": "DuckLife 4",
+        "icon": "/games/images/dl4.png",
+        "url": "ruffle://dl4.swf"
+    },
+    {
+        "name": "DuckLife: Treasure Hunt",
+        "icon": "/games/images/dltresure.png",
+        "url": "ruffle://dltresure.swf"
+    },
+    {
         "name": "1 on 1 Soccer",
         "icon": "/games/images/1-on-1-soccer.webp",
         "url": "ruffle://1on1soccer.swf"

@@ -40,12 +40,6 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20="
   },
   {
-      "name": "More Games",
-      "icon": "/apps/images/moregames.png",
-      "url": "https://example.com",
-      "isMoreStuff": "true"
-  },
-  {
       "name": "NoVNC",
       "icon": "/apps/images/novnc.png",
       "url": "/apps/novnc/vnc.html"

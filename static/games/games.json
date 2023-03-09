@@ -50,6 +50,16 @@
         "url": "ruffle://learn2fly.swf"
     },
     {
+        "name": "Learn To Fly 2",
+        "icon": "/games/images/learntofly2.jpg",
+        "url": "ruffle://learntofly2.swf"
+    },
+    {
+        "name": "Learn To Fly 3",
+        "icon": "/games/images/learntofly3.jpg",
+        "url": "ruffle://learntofly3.swf"
+    },
+    {
         "name": "Breaklock",
         "icon": "/games/images/breaklock.jpg",
         "url": "gs://breaklock"

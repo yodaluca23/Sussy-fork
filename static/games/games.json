@@ -145,6 +145,11 @@
         "url": "gs://x3mpool"
     },
     {
+        "name": "Moto X3M Spooky",
+        "icon": "/games/images/x3mspooky.jpeg",
+        "url": "gs://x3mspooky"
+    },
+    {
         "name": "Edge Not Found",
         "icon": "/games/images/edge.jpg",
         "url": "gs://edgenotfound"

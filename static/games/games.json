@@ -132,22 +132,22 @@
     {
         "name": "Moto X3M",
         "icon": "/games/images/moto3xm.jpeg",
-        "url": "gs://m3x"
+        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS81YjBhYmQ0YzBmYWE0ZjVlYjE5MGE5YTE2ZDVhMWI0Yw=="
     },
     {
         "name": "Moto X3M Winter",
         "icon": "/games/images/x3m4.jpeg",
-        "url": "gs://x3mwinter"
+        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9iY2FjZjgxNDQxYmQ0Yzc3OTlhNjIyMTcxMTE2ZWE5ZA=="
     },
     {
         "name": "Moto X3M Pool",
         "icon": "/games/images/x3mpool.jpeg",
-        "url": "gs://x3mpool"
+        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9mODA0ZDA3OWQxOWY0NGQzYjk1MWVhZDQ1ODhlOTc0YQ=="
     },
     {
         "name": "Moto X3M Spooky",
         "icon": "/games/images/x3mspooky.jpeg",
-        "url": "gs://x3mspooky"
+        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9iOGEzNDI5MDQ2MDg0NzBhOWYzMzgyMzM3YWNhMzU1OA=="
     },
     {
         "name": "Edge Not Found",

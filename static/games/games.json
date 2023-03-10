@@ -130,6 +130,16 @@
         "url": "gs://connect3"
     },
     {
+        "name": "Moto X3M",
+        "icon": "/games/images/moto3xm.jpeg",
+        "url": "ruffle://motox3m.swf"
+    },
+    {
+        "name": "Moto X3M 2",
+        "icon": "/games/images/moto3xm2.jpeg",
+        "url": "ruffle://motox3m2.swf"
+    },
+    {
         "name": "Edge Not Found",
         "icon": "/games/images/edge.jpg",
         "url": "gs://edgenotfound"

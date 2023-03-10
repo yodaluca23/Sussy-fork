@@ -55,13 +55,13 @@
         "url": "ruffle://stickwar.swf"
     },
     {
-        "name": "Portal",
+        "name": "Portal 2D",
         "icon": "/games/images/portal.jpg",
         "url": "ruffle://portal2d.swf"
     },
     {
-        "name": "Portal 2D",
-        "icon": "/games/images/portal.jpg",
+        "name": "Portal: The Flash Version",
+        "icon": "/games/images/portalflash.jpg",
         "url": "ruffle://portal.swf"
     },
     {

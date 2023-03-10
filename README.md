@@ -75,7 +75,7 @@ For Replit, click the padlock icon in the left-hand navigation bar.
 
 Image from Replit's docs:
 
-![The environment variables panel](https://replit-docs-images.util.repl.co/images/repls/env-variables.png)
+![The environment variables panel](https://docimg.replit.com/images/animations/show-secrets.gif)
 
 
 ### Self-host

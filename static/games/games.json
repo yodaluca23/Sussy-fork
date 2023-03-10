@@ -132,22 +132,22 @@
     {
         "name": "Moto X3M",
         "icon": "/games/images/moto3xm.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS81YjBhYmQ0YzBmYWE0ZjVlYjE5MGE5YTE2ZDVhMWI0Yw=="
+        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS9wbGF5"
     },
     {
         "name": "Moto X3M Winter",
         "icon": "/games/images/x3m4.jpeg",
-        "url": "gs://x3mwinter"
+        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS13aW50ZXIvcGxheQ=="
     },
     {
         "name": "Moto X3M Pool",
         "icon": "/games/images/x3mpool.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9mODA0ZDA3OWQxOWY0NGQzYjk1MWVhZDQ1ODhlOTc0YQ=="
+        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS1wb29sLXBhcnR5L3BsYXk="
     },
     {
         "name": "Moto X3M Spooky",
         "icon": "/games/images/x3mspooky.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9iOGEzNDI5MDQ2MDg0NzBhOWYzMzgyMzM3YWNhMzU1OA=="
+        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS1wb29sLXBhcnR5L3BsYXk="
     },
     {
         "name": "Connect 3",

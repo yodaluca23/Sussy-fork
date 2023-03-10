@@ -50,6 +50,11 @@
         "url": "ruffle://1on1soccer.swf"
     },
     {
+        "name": "EaglerCraft 1.5.2",
+        "icon": "/games/images/eagler.jpeg",
+        "url": "gs://eagler1-5-2"
+    },
+    {
         "name": "Stickwar",
         "icon": "/games/images/stickwar.png",
         "url": "ruffle://stickwar.swf"

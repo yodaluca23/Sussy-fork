@@ -55,9 +55,9 @@
         "url": "gs://eagler1-5-2"
     },
     {
-        "name": "Stickwar",
-        "icon": "/games/images/stickwar.png",
-        "url": "ruffle://stickwar.swf"
+        "name": "EaglerCraft 1.8.8",
+        "icon": "/games/images/eagler.jpeg",
+        "url": "gs://eagler1-8-8"
     },
     {
         "name": "Portal 2D",
@@ -130,11 +130,6 @@
         "url": "gs://breakout"
     },
     {
-        "name": "Connect 3",
-        "icon": "/games/images/connect3.webp",
-        "url": "gs://connect3"
-    },
-    {
         "name": "Moto X3M",
         "icon": "/games/images/moto3xm.jpeg",
         "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS81YjBhYmQ0YzBmYWE0ZjVlYjE5MGE5YTE2ZDVhMWI0Yw=="
@@ -153,6 +148,11 @@
         "name": "Moto X3M Spooky",
         "icon": "/games/images/x3mspooky.jpeg",
         "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9iOGEzNDI5MDQ2MDg0NzBhOWYzMzgyMzM3YWNhMzU1OA=="
+    },
+    {
+        "name": "Connect 3",
+        "icon": "/games/images/connect3.webp",
+        "url": "gs://connect3"
     },
     {
         "name": "Edge Not Found",
@@ -223,6 +223,11 @@
         "name": "Garbage Collector",
         "icon": "/games/images/garbage-collector.png",
         "url": "gs://garbage-collector"
+    },
+    {
+        "name": "Stickwar",
+        "icon": "/games/images/stickwar.png",
+        "url": "ruffle://stickwar.swf"
     },
     {
         "name": "Geometry Dash",

@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://socialify.git.ci/yodaluca23/sussy/image?description=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fyodaluca23%2Fsussy%2Fmain%2Fstatic%2Fimg%2Flogo.svg&name=1&owner=1&pattern=Solid&theme=Auto" alt="sussy" width="640" height="320" />
+<img src="https://socialify.git.ci/yodaluca23/sussy/image?description=1&descriptionEditable=Nothing%20Here%20%F0%9F%A4%AB&font=Rokkitt&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fyodaluca23%2Fsussy%2Fmain%2Fstatic%2Fimg%2Flogo.svg&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto" alt="sussy" width="640" height="320" />
 </div>
 
 <div align="center">

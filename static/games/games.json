@@ -136,12 +136,12 @@
     },
     {
         "name": "Moto X3M Winter",
-        "icon": "/games/images/x3m4.jpeg",
+        "icon": "/data-load-uv.html#aHR0cHM6Ly9naXRodWIuY29tL3lvZGFsdWNhMjMvc3Vzc3kvcmF3L21haW4vc3RhdGljL2dhbWVzL2ltYWdlcy94M200LmpwZWc=",
         "url": "gs://x3mwinter"
     },
     {
         "name": "Moto X3M Pool",
-        "icon": "/games/images/x3mpool.jpeg",
+        "icon": "/data-load-uv.html#aHR0cHM6Ly9naXRodWIuY29tL3lvZGFsdWNhMjMvc3Vzc3kvcmF3L21haW4vc3RhdGljL2dhbWVzL2ltYWdlcy94M21wb29sLmpwZWc=",
         "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9mODA0ZDA3OWQxOWY0NGQzYjk1MWVhZDQ1ODhlOTc0YQ=="
     },
     {

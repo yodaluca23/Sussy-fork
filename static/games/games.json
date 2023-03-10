@@ -5,7 +5,7 @@
         "url": "/games/ruffle"
     },
     {
-        "name": "webretro",
+        "name": "Webretro",
         "icon": "/games/webretro/assets/icons/iconm256.png",
         "url": "/games/webretro"
     },
@@ -68,6 +68,11 @@
         "name": "Bash the Computer",
         "icon": "/games/images/bashthecomputer.webp",
         "url": "ruffle://bashthecomputer.swf"
+    },
+    {
+        "name": "CatNinja",
+        "icon": "/games/images/catninja.webp",
+        "url": "ruffle://catninja.swf"
     },
     {
         "name": "Learn To Fly",

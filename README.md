@@ -107,7 +107,7 @@ CHATBOX_URL="https://widgetbot.io"
 ```
 
 ## Changelog
-View the changelog/roadmap [here](https://github.com/IDontCodee/sussy/blob/main/e/CHANGELOG.md)
+View the changelog/roadmap [here](https://github.com/yodaluca23/sussy/blob/main/CHANGELOG.md)
 
 ## License
 sussy uses the MIT license.

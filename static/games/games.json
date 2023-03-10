@@ -137,7 +137,7 @@
     {
         "name": "Moto X3M Winter",
         "icon": "/games/images/x3m4.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS9iY2FjZjgxNDQxYmQ0Yzc3OTlhNjIyMTcxMTE2ZWE5ZA=="
+        "url": "gs://x3mwinter"
     },
     {
         "name": "Moto X3M Pool",

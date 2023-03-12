@@ -45,6 +45,21 @@
         "url": "ruffle://dltresure.swf"
     },
     {
+        "name": "Diep.io",
+        "icon": "/games/images/diep.jpg",
+        "url": "/data-load-uv.html#aHR0cHM6Ly9kaWVwLmlv"
+    },
+      {
+        "name": "Agar.io",
+        "icon": "/games/images/agar.png",
+        "url": "/data-load-uv.html#aHR0cDovL2FnYXIuaW8="
+    },
+    {
+        "name": "Bonk.io",
+        "icon": "/games/images/bonk.jpg",
+        "url": "gs://bonk"
+    },
+    {
         "name": "1 on 1 Soccer",
         "icon": "/games/images/1-on-1-soccer.webp",
         "url": "ruffle://1on1soccer.swf"

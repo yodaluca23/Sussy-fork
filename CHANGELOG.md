@@ -24,6 +24,11 @@
 ### Version 1.3
 - [x] Fix breaking bug
 
+### Version 1.3.1
+- [x] Add More Games
+- [X] Add More Game Icons
+- [X] Add Optional Advertisments
+
 ### Upcoming
  - [ ] Update proxies
  - [ ] Add games

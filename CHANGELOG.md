@@ -27,7 +27,8 @@
 ### Version 1.3.1
 - [x] Add More Games
 - [X] Add More Game Icons
-- [X] Add Optional Advertisments
+- [ ] Add Optional Advertisments
+- [X] Add New Custom Presets
 
 ### Upcoming
  - [ ] Update proxies

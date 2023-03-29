@@ -20,9 +20,8 @@ const setupProxy = {
               "message": "Header was blocked by the owner of this site. Is it a porn site?",
          `);
         }
-        bareServer.routeRequest(req, res); else next();
-    });
-
+    bareServer.routeRequest(req, res);
+  } else {
     server.middlewares.use("/URIconfig", (req, res) => {
       res.end(JSON.stringify({
         DC: process.env['INVITE_URL'] || "example.com",

@@ -1,0 +1,20 @@
+# File: .github/workflows/repo-sync.yml
+
+name: git-sync yod
+
+on: workflow_dispatch
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: "https://github.com/yodaluca23/sussy-fork"
+        source_branch: "main"
+        destination_branch: "main"
+        github_token: ${{ secrets.PAT }}

@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import svgr from 'vite-plugin-svgr'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import svgr from 'vite-plugin-svgr';
 
 import createBareServer from '@tomphttp/bare-server-node';
 import express from 'express';
@@ -20,21 +20,19 @@ const setupProxy = {
               "message": "Header was blocked by the owner of this site. Is it a porn site?",
          `);
         }
-        bareServer.routeRequest(req, res);
-      } else {
-        server.middlewares.use("/URIconfig", (req, res) => {
-          res.end(JSON.stringify({
-            DC: process.env['INVITE_URL'] || "example.com",
-            CH: process.env['CHATBOX_URL'] || "example.com"
-          }));
-        });
-
-        server.middlewares.use(express.static("./static"));
-      }
+    bareServer.routeRequest(req, res);
+  } else {
+    server.middlewares.use("/URIconfig", (req, res) => {
+      res.end(JSON.stringify({
+        DC: process.env['INVITE_URL'] || "example.com",
+        CH: process.env['CHATBOX_URL'] || "example.com"
+      }));
     });
-  }
-};
 
+    server.middlewares.use(express.static("./static"));
+  }
+}
+)
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -52,4 +50,4 @@ export default defineConfig({
     }),
     setupProxy
   ]
-});
+})

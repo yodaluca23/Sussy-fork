@@ -1,5 +1,7 @@
 import { createRequire } from "module";
 import { existsSync } from 'node:fs';
+import chalk from "chalk";
+import block from "./blocklist/block.json" assert { type: "json" };
 if(!existsSync("./node_modules")) throw "Please install packages with 'yarn'";
 if(!existsSync('./dist')) throw "Please build with 'yarn build'";
 const require = createRequire(import.meta.url);
@@ -89,7 +91,15 @@ app.use(function (req, res) {
 // Bad patch for dumb issue
 
 httpPatch.on('request', (req, res) => {
-  if(bare.shouldRoute(req)) return bare.routeRequest(req, res);
+  if(bare.shouldRoute(req)) {
+    if (block.includes(req.headers["x-bare-host"])) {
+      return res.end(`{
+          "id": "error.Blocked",
+          "message": "Header was blocked by the owner of this site. Is this a Porn site?",
+      `);
+    }
+    
+    return bare.routeRequest(req, res);
   if(req.url.startsWith(proxy.prefix)) return proxy.request(req, res);
   if(req.url.startsWith(Rhodium.prefix)) return Rhodium.request(req, res);
   app(req, res);

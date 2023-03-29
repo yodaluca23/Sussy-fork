@@ -4,6 +4,8 @@ import svgr from 'vite-plugin-svgr'
 
 import createBareServer from '@tomphttp/bare-server-node';
 import express from 'express';
+import chalk from "chalk";
+import block from "./blocklist/block.json" assert { type: "json" };
 
 const setupProxy = {
   name: 'setup-proxy-plugin',
@@ -11,7 +13,14 @@ const setupProxy = {
     const bareServer = createBareServer("/not-sus-server/");
 
     server.middlewares.use((req, res, next) => {
-      if(bareServer.shouldRoute(req)) bareServer.routeRequest(req, res); else next();
+      if(bareServer.shouldRoute(req)) {
+        if (block.includes(req.headers["x-bare-host"])) {
+          return res.end(`{
+              "id": "error.Blocked",
+              "message": "Header was blocked by the owner of this site. Is it a porn site?",
+         `);
+        }
+        bareServer.routeRequest(req, res); else next();
     });
 
     server.middlewares.use("/URIconfig", (req, res) => {

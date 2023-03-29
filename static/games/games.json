@@ -49,7 +49,7 @@
         "icon": "/games/images/diep.jpg",
         "url": "/data-load-uv.html#aHR0cHM6Ly9kaWVwLmlv"
     },
-      {
+    {
         "name": "Agar.io",
         "icon": "/games/images/agar.png",
         "url": "/data-load-uv.html#aHR0cDovL2FnYXIuaW8="
@@ -259,7 +259,7 @@
         "icon": "/games/images/chroma.jpg",
         "url": "gs://chroma"
     },
-   {
+    {
         "name": "Chrome Dinosaur",
         "icon": "/games/images/chrome-dinosaur.jpg",
         "url": "gs://dinosaur"
@@ -274,7 +274,7 @@
         "icon": "/games/images/hextris.webp",
         "url": "gs://hextris"
     },
-  {
+    {
         "name": "Cookie Clicker",
         "icon": "/games/images/cookie.webp",
         "url": "gs://cookie"
@@ -364,7 +364,7 @@
         "icon": "/games/images/1v1-lol.jpg",
         "url": "1v1.lol"
     },
-  {
+    {
         "name": "Retro Bowl",
         "icon": "/games/images/retro-bowl.jpg",
         "url": "gs://retro-bowl"
@@ -379,7 +379,7 @@
         "icon": "/games/images/cubefield.jpeg",
         "url": "gs://cubefield"
     },
-      {
+    {
         "name": "Among Us Scratch",
         "icon": "/games/images/among.jpg",
         "url": "gs://sus"

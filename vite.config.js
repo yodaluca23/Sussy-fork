@@ -20,18 +20,20 @@ const setupProxy = {
               "message": "Header was blocked by the owner of this site. Is it a porn site?",
          `);
         }
-    bareServer.routeRequest(req, res);
-  } else {
-    server.middlewares.use("/URIconfig", (req, res) => {
-      res.end(JSON.stringify({
-        DC: process.env['INVITE_URL'] || "example.com",
-        CH: process.env['CHATBOX_URL'] || "example.com"
-      }));
-    });
+        bareServer.routeRequest(req, res);
+      } else {
+        server.middlewares.use("/URIconfig", (req, res) => {
+          res.end(JSON.stringify({
+            DC: process.env['INVITE_URL'] || "example.com",
+            CH: process.env['CHATBOX_URL'] || "example.com"
+          }));
+        });
 
-    server.middlewares.use(express.static("./static"));
+        server.middlewares.use(express.static("./static"));
+      }
+    });
   }
-}
+};
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -50,4 +52,4 @@ export default defineConfig({
     }),
     setupProxy
   ]
-})
+});

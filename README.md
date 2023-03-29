@@ -53,6 +53,7 @@ sussy uses ENV variables for config.
 - `password` - The password if auth is enabled.
 - `INVITE_URL` - The link for the discord button on the home page.
 - `CHATBOX_URL` - The link for the chatbox.
+- `ADSTERRA_AD_KEY` - Your Adsterra Banner 728x90 Ad Key, if left blank, no ads will be displayed.
 
 #### Quick links to how to configure for:
 
@@ -104,6 +105,9 @@ INVITE_URL="https://discord.gg"
 
 # The link for the chatbox. Double quotes are needed
 CHATBOX_URL="https://widgetbot.io"
+
+# Your Adsterra Banner 728x90 Ad Key, if not used, no ads will be displayed. Double quotes are needed.
+ADSTERRA_AD_KEY="454352523423"
 ```
 
 ## Changelog

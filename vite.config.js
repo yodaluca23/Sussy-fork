@@ -5,7 +5,7 @@ import createProxyMiddleware from 'http-proxy-middleware'
 import dns from 'dns'
 
 const customResolver = (url, callback) => {
-  const dnsServer = process.env.PROXY_DNS || '1.1.1.1';
+  const dnsServer = process.env.DNS || '1.1.1.1';
   const resolver = new dns.Resolver();
   resolver.setServers([dnsServer]);
   resolver.resolve4(url.hostname, (err, addresses) => {

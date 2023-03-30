@@ -2,14 +2,19 @@
 FROM vm/ubuntu:18.04
 # To note: Layerfiles create VMs, *not* containers!
 
-# Install node
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash && \
-    apt install nodejs && \
-    rm -f /etc/apt/sources.list.d/nodesource.list
-RUN npm install -g http-server
+# Update package index and install nodejs
+RUN apt-get update && \
+    apt-get install -y curl && \
+    curl -sL https://deb.nodesource.com/setup_12.x | bash && \
+    apt-get install -y nodejs && \
+    rm -f /etc/apt/sources.list.d/nodesource.list && \
+    npm install -g http-server
 
 COPY . .
 RUN echo 'hello' > hello.html
 
-RUN BACKGROUND http-server -p 8000
-EXPOSE WEBSITE http://localhost:8000
+# Start the http-server
+CMD ["http-server", "-p", "8000"]
+
+# Expose the port
+EXPOSE 8000

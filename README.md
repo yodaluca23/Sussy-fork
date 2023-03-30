@@ -52,6 +52,7 @@ sussy uses ENV variables for config.
 - `username` - The username if auth is enabled.
 - `password` - The password if auth is enabled.
 - `INVITE_URL` - The link for the discord button on the home page.
+- `DNS` - The DNS the proxy will be put through.
 - `CHATBOX_URL` - The link for the chatbox.
 - `ADSTERRA_AD_KEY` - Your Adsterra Banner 728x90 Ad Key, if left blank, no ads will be displayed.
 
@@ -102,6 +103,9 @@ password="1234isabadpassword"
 
 # The link for the discord button on the home page. Double quotes are needed
 INVITE_URL="https://discord.gg"
+
+# The DNS the proxy will be put through., default "1.1.1.1". Double quotes are needed.
+DNS="1.1.1.3"
 
 # The link for the chatbox. Double quotes are needed
 CHATBOX_URL="https://widgetbot.io"

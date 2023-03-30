@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr'
 import createBareServer from '@tomphttp/bare-server-node'
 import express from 'express'
-import dns from 'dns'
+import dns from 'dns-lookup-cache'
 
 const setupProxy = {
   name: 'setup-proxy-plugin',
@@ -26,14 +26,18 @@ const setupProxy = {
   async configureServer(server) {
     const dnsServer = process.env['DNS'] || '1.1.1.1'
 
-    const customResolver = new dns.promises.Resolver()
-    customResolver.setServers([dnsServer])
+    dns.setServers([dnsServer])
 
     server.middlewares.use(async (req, res, next) => {
       try {
         const domain = new URL(req.url).hostname
-        await customResolver.resolve4(domain)
-        next()
+        const result = await dns.lookup(domain)
+        if (result && result.address) {
+          next()
+        } else {
+          console.error(`Blocked request to ${req.url}: DNS lookup failed`)
+          res.status(403).send(`Access denied: ${req.url} is blocked by the website host. Is this a porn site?`)
+        }
       } catch (err) {
         console.error(`Blocked request to ${req.url}: ${err.message}`)
         res.status(403).send(`Access denied: ${req.url} is blocked by the website host. Is this a porn site?`)

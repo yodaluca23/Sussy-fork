@@ -1,9 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import svgr from 'vite-plugin-svgr';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import svgr from 'vite-plugin-svgr'
+import dns from 'dns'
+
 import createBareServer from '@tomphttp/bare-server-node';
 import express from 'express';
-import dns from 'dns';
 
 const setupProxy = {
   name: 'setup-proxy-plugin',
@@ -25,21 +26,18 @@ const setupProxy = {
   }
 }
 
+// Custom resolver that enforces DNS filtering
 const customResolver = {
   name: 'custom-resolver-plugin',
-  async configureServer(server) {
-    const dnsServer = process.env['DNS'] || "1.1.1.1";
-    const resolver = new dns.promises.Resolver();
-    resolver.setServers([dnsServer]);
-
-    server.middlewares.use((req, res, next) => {
-      const urlObj = new URL(req.url, `http://${req.headers.host}`);
-      const hostname = urlObj.hostname;
-
-      resolver.resolve(hostname)
-        .then(() => next())
-        .catch(() => res.sendStatus(404));
-    });
+  async resolveId(id, importer) {
+    const dnsServer = process.env.DNS || '1.1.1.1';
+    const options = { family: 4, all: false, hints: dns.ADDRCONFIG | dns.V4MAPPED };
+    try {
+      await dns.promises.lookup(id, options);
+      return null; // allow resolution using default algorithm
+    } catch (err) {
+      return `Cannot resolve ${id}`; // block resolution
+    }
   }
 };
 

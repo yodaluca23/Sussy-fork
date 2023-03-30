@@ -1,5 +1,6 @@
 #This is an example webapp.io configuration for NodeJS
-FROM ubuntu:18.04
+FROM vm/ubuntu:18.04
+# To note: Layerfiles create VMs, *not* containers!
 
 # Update package index and install nodejs
 RUN apt-get update && \

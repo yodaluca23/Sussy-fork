@@ -1032,6 +1032,11 @@ array-flatten@1.1.1:
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==
 
+asap@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
+  integrity sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -1320,6 +1325,22 @@ destroy@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
+
+dns-lookup-cache@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/dns-lookup-cache/-/dns-lookup-cache-1.0.4.tgz#fab28a97ef320215d9255ce866b7dc769acf1762"
+  integrity sha512-528ydOnvZQ+a0f+BfmBU4A5zGb05uvwxN/u96/yQdSA7Z8uwDXHXJ+FEPl5UI91Ga7SNyDT4csL9x4pWMHMCyg==
+  dependencies:
+    lodash "^4.17.11"
+    rr "^0.1.0"
+
+dnscache@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/dnscache/-/dnscache-1.0.2.tgz#fd3c24d66c141625f594c77be7a8dafee2a66c8a"
+  integrity sha512-2FFKzmLGOnD+Y378bRKH+gTjRMuSpH7OKgPy31KjjfCoKZx7tU8Dmqfd/3fhG2d/4bppuN8/KtWMUZBAcUCRnQ==
+  dependencies:
+    asap "^2.0.6"
+    lodash.clone "^4.5.0"
 
 dom-helpers@^5.0.1:
   version "5.2.1"
@@ -1841,6 +1862,16 @@ loader-runner@^4.2.0:
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-4.3.0.tgz#c1b4a163b99f614830353b16755e7149ac2314e1"
   integrity sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==
 
+lodash.clone@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.clone/-/lodash.clone-4.5.0.tgz#195870450f5a13192478df4bc3d23d2dea1907b6"
+  integrity sha512-GhrVeweiTD6uTmmn5hV/lzgCQhccwReIVRLHp7LT4SopOjqEZ5BbX8b5WWEtAKasjmy8hR7ZPwsYlxRCku5odg==
+
+lodash@^4.17.11:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -2205,6 +2236,11 @@ rollup@^3.7.0:
   integrity sha512-3Er+yel3bZbZX1g2kjVM+FW+RUWDxbG87fcqFM5/9HbPCTpbVp6JOLn7jlxnNlbu7s/N/uDA4EV/91E2gWnxzw==
   optionalDependencies:
     fsevents "~2.3.2"
+
+rr@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/rr/-/rr-0.1.0.tgz#a18ec25ec94a67c35f210bb3a85d17914e79cd1e"
+  integrity sha512-iBkuF5DdONGO9Wfbj9O56fLgiKPzStNZUAeEG2d/61f9G1ZZjOT1W5WjNJvajRK2jWws1Mxas9wUZaSHcteouA==
 
 safe-buffer@5.1.2:
   version "5.1.2"

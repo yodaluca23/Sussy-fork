@@ -1,50 +1,45 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr'
-import createBareServer from '@tomphttp/bare-server-node'
-import express from 'express'
-import dns from 'dns-lookup-cache'
+
+import createBareServer from '@tomphttp/bare-server-node';
+import express from 'express';
+import dns from 'dns';
 
 const setupProxy = {
   name: 'setup-proxy-plugin',
   async configureServer(server) {
-    const bareServer = createBareServer("/not-sus-server/")
+    const bareServer = createBareServer("/not-sus-server/");
 
     server.middlewares.use((req, res, next) => {
       if(bareServer.shouldRoute(req)) bareServer.routeRequest(req, res); else next();
-    })
+    });
 
     server.middlewares.use("/URIconfig", (req, res) => {
       res.end(JSON.stringify({
         DC: process.env['INVITE_URL'] || "example.com",
         CH: process.env['CHATBOX_URL'] || "example.com"
-      }))
-    })
+      }));
+    });
 
-    server.middlewares.use(express.static("./static"))
-  },
-  async configureServer(server) {
-    const dnsServer = process.env['DNS'] || '1.1.1.1'
+    server.middlewares.use(express.static("./static"));
 
-    dns.setServers([dnsServer])
-
-    server.middlewares.use(async (req, res, next) => {
-      try {
-        const domain = new URL(req.url).hostname
-        const result = await dns.lookup(domain)
-        if (result && result.address) {
-          next()
+    // Custom resolver to use DNS filtering service
+    const originalLookup = dns.lookup;
+    const dnsServer = process.env.DNS || '1.1.1.1';
+    dns.lookup = function(hostname, options, callback) {
+      const callbackWrapper = (err, address, family) => {
+        if (err) {
+          console.error(`DNS lookup failed for ${hostname}`);
+          res.status(403).sendFile('./blocked.html', { root: './static' });
         } else {
-          console.error(`Blocked request to ${req.url}: DNS lookup failed`)
-          res.status(403).send(`Access denied: ${req.url} is blocked by the website host. Is this a porn site?`)
+          callback(err, address, family);
         }
-      } catch (err) {
-        console.error(`Blocked request to ${req.url}: ${err.message}`)
-        res.status(403).send(`Access denied: ${req.url} is blocked by the website host. Is this a porn site?`)
-      }
-    })
+      };
+      originalLookup.call(dns, hostname, { ...options, server: [dnsServer] }, callbackWrapper);
+    };
   }
-}
+};
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -63,4 +58,4 @@ export default defineConfig({
     }),
     setupProxy
   ]
-})
+});

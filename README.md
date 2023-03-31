@@ -20,6 +20,11 @@
 </a>
 </div>
 
+<h1 align="center">
++ KronosEternal
+<img src="https://user-images.githubusercontent.com/99846877/224102654-f55464b3-9196-4680-92cf-7761feaa6869.png" alt="atom" width:"30" height="30" />
+</h1>
+
 ##  Fork Changes
 I ([yodaluca23](https://github.com/yodaluca23)) forked this from [IDontCodee](https://github.com/IDontCodee/sussy), and changed some stuff to my personal preferences all credit goes to them along with all the proxy backend creators.
 

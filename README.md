@@ -82,7 +82,7 @@ For Replit, click the padlock icon in the left-hand navigation bar.
 
 Image from Replit's docs:
 
-![The environment variables panel](https://docimg.replit.com/images/animations/show-secrets.gif)
+![The environment variables panel](https://github.com/yodaluca23/Random-Crap/raw/main/show-secrets.gif)
 
 
 ### Self-host

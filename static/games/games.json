@@ -80,6 +80,16 @@
         "url": "ruffle://bashthecomputer.swf"
     },
     {
+        "name": "EaglerCraft 1.5.2",
+        "icon": "/games/images/eagler.jpeg",
+        "url": "gs://eagler1-5-2"
+    },
+    {
+        "name": "EaglerCraft 1.8.8",
+        "icon": "/games/images/eagler.jpeg",
+        "url": "gs://eagler1-8-8"
+    },
+    {
         "name": "CatNinja",
         "icon": "/games/images/catninja.webp",
         "url": "ruffle://catninja.swf"

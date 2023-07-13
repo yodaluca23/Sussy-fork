@@ -5,9 +5,9 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueW91dHViZS5jb20="
   },
   {
-        "title": "Tik Tok",
-        "image": "/apps/images/tt.jpg",
-        "location": "/data-load-uv.html#aHR0cHM6Ly93d3cudGlrdG9rLmNvbQ=="
+      "name": "Tik Tok",
+      "icon": "/apps/images/tt.jpg",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cudGlrdG9rLmNvbQ=="
   },
   {
       "name": "Spotify",
@@ -35,9 +35,9 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcHA="
   },
   {
-      "name": "HiMovies",
-      "icon": "/apps/images/himovies.png",
-      "url": "/data-load-uv.html#aHR0cHM6Ly9oaW1vdmllcy50b3A="
+      "name": "ZoeChip",
+      "icon": "/apps/images/zoechip.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3czLnpvZWNoaXAuY29t"
   },
   {
       "name": "Pinterest",

@@ -75,6 +75,11 @@
         "url": "ruffle://portal.swf"
     },
     {
+        "name": "Precision Client 1.5.2",
+        "icon": "/games/images/precision-client.png",
+        "url": "gs://PrecisionClient"
+    },
+    {
         "name": "EaglerCraft 1.5.2",
         "icon": "/games/images/eagler.jpeg",
         "url": "gs://eagler1-5-2"

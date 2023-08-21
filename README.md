@@ -28,6 +28,8 @@
 ##  Fork Changes
 I ([yodaluca23](https://github.com/yodaluca23)) forked this from [IDontCodee](https://github.com/IDontCodee/sussy), and changed some stuff to my personal preferences all credit goes to them along with all the proxy backend creators.
 
+I ([KronosEternal](https://github.com/KronosEternal)) collaborate on this project with yodaluca23 to create a quality proxy
+
 ## Features
 - Simple clean design
 - Support for many popular sites

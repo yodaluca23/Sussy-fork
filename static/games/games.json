@@ -75,9 +75,9 @@
         "url": "ruffle://portal.swf"
     },
     {
-        "name": "Bash the Computer",
-        "icon": "/games/images/bashthecomputer.webp",
-        "url": "ruffle://bashthecomputer.swf"
+        "name": "Precision Client 1.5.2",
+        "icon": "/games/images/precision-client.png",
+        "url": "gs://PrecisionClient"
     },
     {
         "name": "EaglerCraft 1.5.2",
@@ -88,6 +88,11 @@
         "name": "EaglerCraft 1.8.8",
         "icon": "/games/images/eagler.jpeg",
         "url": "gs://eagler1-8-8"
+    },
+    {
+        "name": "Bash the Computer",
+        "icon": "/games/images/bashthecomputer.webp",
+        "url": "ruffle://bashthecomputer.swf"
     },
     {
         "name": "CatNinja",
@@ -118,6 +123,11 @@
         "name": "Bounceback",
         "icon": "/games/images/bounceback.webp",
         "url": "gs://bounceback"
+    },
+    {
+        "name": "Bad-Time Sim",
+        "icon": "/games/images/badtime.png",
+        "url": "/data-load-uv.html#aHR0cHM6Ly9qY3c4Ny5naXRodWIuaW8vYzItc2Fucy1maWdodA=="
     },
     {
         "name": "Space Company",

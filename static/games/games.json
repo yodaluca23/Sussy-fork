@@ -77,7 +77,7 @@
     {
         "name": "Precision Client 1.5.2",
         "icon": "/games/images/precision-client.png",
-        "url": "gs://PrecisionClient"
+        "url": "gs://precisionclient"
     },
     {
         "name": "EaglerCraft 1.5.2",

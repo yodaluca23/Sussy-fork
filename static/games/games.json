@@ -252,7 +252,7 @@
     {
         "name": "Geometry Dash",
         "icon": "/games/images/geometrydash.jpg",
-        "url": "gs://geometry"
+        "url": "/data-load-uv.html#aHR0cHM6Ly9nZW9tZXRyeWRhc2hsaXRlLmNvL2dhbWUvZ2VvbWV0cnktZGFzaC1saXRl"
     },
     {
         "name": "Friendly Fire",

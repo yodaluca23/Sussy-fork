@@ -20,7 +20,7 @@
     "@mui/material": "^5.11.5",
     "@mui/styled-engine": "^5.11.0",
     "@tomphttp/bare-client": "^1.1.2-beta.3",
-    "@tomphttp/bare-server-node": "^1.2.2",
+    "@tomphttp/bare-server-node": "^2.0.2",
     "Rhodium": "github:ludicrousdevelopment/rhodium",
     "clsx": "^1.2.1",
     "corrosion": "^1.0.0",

@@ -32,8 +32,20 @@ function Search() {
       <EngineOption type="Qwant">
         <Obfuscate>Qwant</Obfuscate>
       </EngineOption>
+      <EngineOption type="StartPage">
+        <Obfuscate>StartPage</Obfuscate>
+      </EngineOption>
+      <EngineOption type="Mojeek">
+        <Obfuscate>Mojeek</Obfuscate>
+      </EngineOption>
+      <EngineOption type="Ecosia">
+        <Obfuscate>Ecosia</Obfuscate>
+      </EngineOption>
       <EngineOption type="Brave">
         <Obfuscate>Brave</Obfuscate>
+      </EngineOption>
+      <EngineOption type="Bing">
+        <Obfuscate>Bing</Obfuscate>
       </EngineOption>
       <EngineOption type="Google">
         <Obfuscate>Google :(</Obfuscate>

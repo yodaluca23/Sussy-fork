@@ -29,6 +29,9 @@ function Search() {
       <EngineOption type="DuckDuckGo">
         <Obfuscate>DuckDuckGo</Obfuscate>
       </EngineOption>
+      <EngineOption type="Qwant">
+        <Obfuscate>Qwant</Obfuscate>
+      </EngineOption>
       <EngineOption type="Brave">
         <Obfuscate>Brave</Obfuscate>
       </EngineOption>

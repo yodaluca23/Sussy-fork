@@ -18,6 +18,14 @@ export function getSearchEngine() {
       return "https://www.google.com/search?a=";
     case "Qwant":
       return "https://www.qwant.com/?q=";
+    case "Ecosia":
+      return "https://www.ecosia.org/search?q=";
+    case "Mojeek":
+      return "https://www.mojeek.com/search?q=";
+    case "Bing":
+      return "https://www.bing.com/search?q=";
+    case "StartPage":
+      return "https://www.startpage.com/sp/search?q=";
     default:
       case "DuckDuckGo":
         return "https://duckduckgo.com/?q=";

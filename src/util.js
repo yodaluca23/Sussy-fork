@@ -16,6 +16,8 @@ export function getSearchEngine() {
       return "https://search.brave.com/search?q=";
     case "Google":
       return "https://www.google.com/search?a=";
+    case "Qwant":
+      return "https://www.qwant.com/?q=";
     default:
       case "DuckDuckGo":
         return "https://duckduckgo.com/?q=";

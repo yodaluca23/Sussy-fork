@@ -35,9 +35,9 @@
       "url": "/data-load-uv.html#aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcHA="
   },
   {
-      "name": "ZoeChip",
-      "icon": "/apps/images/zoechip.png",
-      "url": "/data-load-uv.html#aHR0cHM6Ly93d3czLnpvZWNoaXAuY29t"
+      "name": "Sudo-Flix",
+      "icon": "https://raw.githubusercontent.com/sussy-code/smov/main/public/android-chrome-512x512.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly9tb3ZpZXMuZGlkaWludGhlLmNsb3Vk"
   },
   {
       "name": "Pinterest",

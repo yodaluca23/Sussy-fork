@@ -36,7 +36,7 @@
   },
   {
       "name": "Sudo-Flix",
-      "icon": "https://raw.githubusercontent.com/sussy-code/smov/main/public/android-chrome-512x512.png",
+      "icon": "/apps/images/sudoflix.png",
       "url": "/data-load-uv.html#aHR0cHM6Ly9tb3ZpZXMuZGlkaWludGhlLmNsb3Vk"
   },
   {

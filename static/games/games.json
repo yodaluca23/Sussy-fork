@@ -80,6 +80,11 @@
         "url": "gs://precisionclient"
     },
     {
+        "name": "WebMC Launcher",
+        "icon": "/games/images/webmc.png",
+        "url": "/data-load-uv.html#aHR0cHM6Ly93ZWJtYy5jb2xic3RlcjkzNy5kZXY="
+    },
+    {
         "name": "EaglerCraft 1.5.2",
         "icon": "/games/images/eagler.jpeg",
         "url": "gs://eagler1-5-2"

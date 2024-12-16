@@ -50,6 +50,11 @@
         "url": "ruffle://acidBunny.swf"
     },
     {
+        "name": "Acid Bunny 2",
+        "icon": "/games/images/acidBunny2.jpg",
+        "url": "ruffle://acidBunny2.swf"
+    },
+    {
         "name": "Diep.io",
         "icon": "/games/images/diep.jpg",
         "url": "/data-load-uv.html#aHR0cHM6Ly9kaWVwLmlv"

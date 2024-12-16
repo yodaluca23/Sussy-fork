@@ -45,6 +45,11 @@
         "url": "ruffle://dltresure.swf"
     },
     {
+        "name": "Acid Bunny",
+        "icon": "/games/images/acidBunny.jpg",
+        "url": "ruffle://acidBunny.swf"
+    },
+    {
         "name": "Diep.io",
         "icon": "/games/images/diep.jpg",
         "url": "/data-load-uv.html#aHR0cHM6Ly9kaWVwLmlv"
@@ -162,22 +167,32 @@
     {
         "name": "Moto X3M",
         "icon": "/games/images/moto3xm.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS9wbGF5"
+        "url": "/data-load-uv.html#aHR0cDovL3d3dy5mcml2LmNvbS96L2dhbWVzL21vdG94M20vaW5kZXgteC5odG1s"
+    },
+    {
+        "name": "Moto X3M II",
+        "icon": "/games/images/x3mII.jpg",
+        "url": "/data-load-uv.html#aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbS95OC1zdHVkaW8vaHRtbDUvYWtlZW15d2thL21vdG9feDNtXzIvaW5kZXguaHRtbA=="
+    },
+    {
+        "name": "Moto X3M III",
+        "icon": "/games/images/x3mIII.jpg",
+        "url": "/data-load-uv.html#aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbS95OC1zdHVkaW8vaHRtbDUvYWtlZW15d2thL21vdG9feDNtXzMvaW5kZXguaHRtbA=="
     },
     {
         "name": "Moto X3M Winter",
         "icon": "/games/images/x3m4.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS13aW50ZXIvcGxheQ=="
+        "url": "/data-load-uv.html#aHR0cDovL3d3dy5jb29sbWF0aGdhbWVzLmNvbS9zaXRlcy9kZWZhdWx0L2ZpbGVzL3B1YmxpY19nYW1lcy8yNTY3OQ=="
     },
     {
         "name": "Moto X3M Pool",
         "icon": "/games/images/x3mpool.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS1wb29sLXBhcnR5L3BsYXk="
+        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vc2l0ZXMvZGVmYXVsdC9maWxlcy9wdWJsaWNfZ2FtZXMvMjYzNDg"
     },
     {
         "name": "Moto X3M Spooky",
         "icon": "/games/images/x3mspooky.jpeg",
-        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vMC1tb3RvLXgzbS1zcG9va3ktbGFuZC9wbGF5"
+        "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20vc2l0ZXMvZGVmYXVsdC9maWxlcy9wdWJsaWNfZ2FtZXMvMjc1Mzk="
     },
     {
         "name": "Connect 3",

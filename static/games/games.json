@@ -255,6 +255,11 @@
         "url": "gs://slope"
     },
     {
+        "name": "Slope Xtreme",
+        "icon": "/games/images/slopeXtreme.png",
+        "url": "https://slopextreme.com"
+    },
+    {
         "name": "Flappy Bird",
         "icon": "/games/images/flappy-bird.webp",
         "url": "gs://flappy-bird"

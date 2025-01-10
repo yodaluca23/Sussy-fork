@@ -43,7 +43,7 @@ function searchURL(url) {
 }
 
 export function getLink(url, morestuff) {
-  console.log("Navigating to Link: " + url);
+  console.log("[46] Navigating to Link: " + url);
   if(morestuff) return (__sussy$config?.moreStuffURI || "example.com")
   if(url.startsWith('/')) return url; // A local file
   var type = localStorage.getItem("type") || "Ultraviolet";
@@ -72,7 +72,8 @@ export function getWindowLocation(page) {
   var [type] = localStorage.getItem("type") || "Ultraviolet";
 
   var pageURL = page.contentWindow.location.toString();
-
+  console.log("[75] Navigating to Link: " + pageURL);
+  
   try {
     switch (type) {
       case "Ultraviolet":

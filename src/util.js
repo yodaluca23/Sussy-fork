@@ -43,6 +43,7 @@ function searchURL(url) {
 }
 
 export function getLink(url, morestuff) {
+  console.log("Navigating to Link: " + url);
   if(morestuff) return (__sussy$config?.moreStuffURI || "example.com")
   if(url.startsWith('/')) return url; // A local file
   var type = localStorage.getItem("type") || "Ultraviolet";

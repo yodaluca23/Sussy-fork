@@ -201,7 +201,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
                 </style>
             </head>
             <body>
-                <h1>This site is not permitted by the authors of the website.</h1>
+                <h1>The site you were trying to access is not permitted by the authors of this website.</h1>
             </body>
             </html>
             `;

@@ -178,7 +178,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             
             if (url.includes("/data-load-uv.html#")) {
                 result = atob(url.replace(window.location.hostname + "/data-load-uv.html#", "").replace("https://","").replace("http://",""));
-            } else if (url.includes("window.location.hostname")) {
+            } else if (url.includes(window.location.hostname)) {
                 result = urlDecodeAndXor(url.replace(/.*\/(rho\/|co\/|sw-src\/)/, ""));
             } else {
                 result = url;
@@ -187,7 +187,6 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             var host = new URL(result).hostname;
             
             console.log(host);
-            
             
             const BlockedHTML = `
             <!DOCTYPE html>

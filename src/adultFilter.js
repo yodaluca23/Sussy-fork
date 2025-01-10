@@ -1,19 +1,9 @@
 /* Functions Used for Adult Filtering  */
 
-export function xorDecode(str, key) {
-  const keyBytes = key.match(/.{2}/g).map(byte => parseInt(byte, 16));
-
-  let decoded = '';
-  for (let i = 0; i < str.length; i++) {
-      decoded += String.fromCharCode(str.charCodeAt(i) ^ keyBytes[i % keyBytes.length]);
-  }
-  return decoded;
-}
-
 export function urlDecodeAndXor(url2) {
     let decodedUrl = decodeURIComponent(url2);
     
-    let xorDecodedUrl = xorDecode(decodedUrl, atob(atob(atob('VFVSQmQwMXFRWGROUkVrOQ'))));
+    let xorDecodedUrl = __uv$config.decodeUrl(decodedUrl)
     
     return xorDecodedUrl;
 }

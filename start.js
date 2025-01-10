@@ -26,16 +26,6 @@ const app = express();
 const ws = new WebSocketServer({ noServer: true });
 import basicAuth from 'express-basic-auth';
 
-app.use((req, res, next) => {
-  console.log(`Incoming request: ${req.method} ${req.url}`);
-  const originalSend = res.send;
-  res.send = function (body) {
-    console.log(`Outgoing response: ${res.statusCode} ${res.statusMessage}`);
-    originalSend.apply(res, arguments);
-  };
-  next();
-});
-
 // PX imports
 const Corrosion = require("corrosion")
 import RhodiumProxy from 'Rhodium';

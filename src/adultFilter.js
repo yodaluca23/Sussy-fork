@@ -1,4 +1,4 @@
-/*Functions Used for AdultFiltering  */
+/* Functions Used for Adult Filtering  */
 
 export function xorDecode(str, key) {
   const keyBytes = key.match(/.{2}/g).map(byte => parseInt(byte, 16));
@@ -34,7 +34,7 @@ export async function isFiltered(hostname) {
       return false; // Site is not filtered (SFW)
     }
   } catch (error) {
-    console.error('Error occurred while checking hostname:', error);
+    console.error('Error occurred while checking filter status of hostname:', error);
     return false; // Default to false if an error occurs
   }
 }

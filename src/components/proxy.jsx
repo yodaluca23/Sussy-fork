@@ -136,9 +136,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
 
           /**
           *  Adult Filtering Logic
-          */
-          console.log("[135] Navigating to Link: " + getWindowLocation(web.current));
-          
+          */          
           var url = getWindowLocation(web.current)
         
           var result = "";
@@ -152,12 +150,10 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
           }
           
           var host = new URL(result).hostname;
-          
-          console.log(host);
-          
+                    
           isFiltered(host).then((result) => {
             if (result) {
-              console.log(`${host} is filtered (NSFW).`);
+              console.log(`Redirecting...\n${host} is to be filtered (NSFW).`);
               document.open();
               document.write(BlockedHTML);
               document.close();

@@ -134,10 +134,8 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             getWindowLocation(web.current);
           console.log("[135] Navigating to Link: " + getWindowLocation(web.current));
           function xorDecode(str, key) {
-              // Convert hex key to an array of integers
               const keyBytes = key.match(/.{2}/g).map(byte => parseInt(byte, 16));
           
-              // Apply XOR with the key bytes
               let decoded = '';
               for (let i = 0; i < str.length; i++) {
                   decoded += String.fromCharCode(str.charCodeAt(i) ^ keyBytes[i % keyBytes.length]);
@@ -146,10 +144,8 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             }
             
             function urlDecodeAndXor(url2) {
-                // Step 1: URL decode
                 let decodedUrl = decodeURIComponent(url2);
                 
-                // Step 2: XOR decode with the key
                 let xorDecodedUrl = xorDecode(decodedUrl, atob(atob(atob('VFVSQmQwMXFRWGROUkVrOQ'))));
                 
                 return xorDecodedUrl;
@@ -157,17 +153,14 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             
             async function isFiltered(hostname) {
               try {
-                // Define options for the fetch request
                 const options = {
                   method: 'GET',
                   headers: { accept: 'application/dns-json' }
                 };
             
-                // Perform DNS query to check if the site is filtered
                 var response = await fetch(`https://family.cloudflare-dns.com/dns-query?name=${hostname}`, options);
                 var data = await response.json();
             
-                // Check if the "Comment" field contains "Filtered"
                 if (data && Array.isArray(data.Comment) && data.Comment.some(comment => comment.includes("Filtered"))) {
                   return true; // Site is filtered (NSFW)
                 } else {
@@ -184,8 +177,8 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             var result = "";
             
             if (url.includes("/data-load-uv.html#")) {
-                result = atob(url.replace("https://sussy-fork-production.up.railway.app/data-load-uv.html#", ""));
-            } else if (url.includes("sussy-fork-production.up.railway.app")) {
+                result = atob(url.replace(window.location.hostname + "/data-load-uv.html#", "").replace("https://","").replace("http://",""));
+            } else if (url.includes("window.location.hostname")) {
                 result = urlDecodeAndXor(url.replace(/.*\/(rho\/|co\/|sw-src\/)/, ""));
             } else {
                 result = url;
@@ -209,7 +202,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
                 </style>
             </head>
             <body>
-                <h1>This website is not permitted by the authors of the website.</h1>
+                <h1>This site is not permitted by the authors of the website.</h1>
             </body>
             </html>
             `;
@@ -221,11 +214,9 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
                 document.open();
                 document.write(BlockedHTML);
                 document.close();
-              } else {
-                console.log(`${host} is not filtered (SFW).`);
               }
             }).catch(error => {
-              console.error('Error occurred while checking hostname:', error);
+              console.error('Error occurred while checking filter status of hostname:', error);
             });
           
           var icon = web.current.contentWindow.document.querySelector(

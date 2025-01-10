@@ -132,7 +132,8 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
           updatedConfig.title =
             web.current.contentWindow.document.title ||
             getWindowLocation(web.current);
-
+          console.log("[135] Navigating to Link: " + getWindowLocation(web.current));
+          
           var icon = web.current.contentWindow.document.querySelector(
             "link[rel*='icon'],link[rel='shortcut icon']"
           );

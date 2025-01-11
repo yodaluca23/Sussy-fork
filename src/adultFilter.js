@@ -25,7 +25,7 @@ export async function isFiltered(hostname) {
     }
   } catch (error) {
     console.error('Error occurred while checking filter status of hostname:', error);
-    return false; // Default to false if an error occurs
+    return false;
   }
 }
 
@@ -35,7 +35,7 @@ export const BlockedHTML = `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Permitted Website</title>
+    <title>Website Not Permitted</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
         h1 { color: red; }

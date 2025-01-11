@@ -153,7 +153,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
                     
           isFiltered(host).then((result) => {
             if (result) {
-              console.log(`Redirecting...\n${host} is to be filtered (NSFW).`);
+              console.warn(`Redirecting...\n${host} is flagged (NSFW).`);
               document.open();
               document.write(BlockedHTML);
               document.close();

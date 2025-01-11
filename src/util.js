@@ -70,7 +70,8 @@ export function getLink(url, morestuff) {
 export function getWindowLocation(page) {
   var [type] = localStorage.getItem("type") || "Ultraviolet";
 
-  var pageURL = page.contentWindow.location.toString();  
+  var pageURL = page.contentWindow.location.toString();
+
   try {
     switch (type) {
       case "Ultraviolet":

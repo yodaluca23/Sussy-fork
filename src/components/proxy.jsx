@@ -8,6 +8,7 @@ import { getWindowLocation } from "../util.js";
 import "../style/controls.css";
 import BareClient from "@tomphttp/bare-client";
 import { useSearchParams } from "react-router-dom";
+import { urlDecodeAndXor, isFiltered, BlockedHTML } from "../adultFilter.js";
 
 const NotAImage = [
   "text/html"
@@ -133,6 +134,34 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             web.current.contentWindow.document.title ||
             getWindowLocation(web.current);
 
+          /**
+          *  Adult Filtering Logic
+          */          
+          var url = getWindowLocation(web.current)
+        
+          var result = "";
+          
+          if (url.includes("/data-load-uv.html#")) {
+              result = atob(url.replace(window.location.hostname + "/data-load-uv.html#", "").replace("https://","").replace("http://",""));
+          } else if (url.includes(window.location.hostname)) {
+              result = urlDecodeAndXor(url.replace(/.*\/(rho\/|co\/|sw-src\/)/, ""));
+          } else {
+              result = url;
+          }
+          
+          var host = new URL(result).hostname;
+                    
+          isFiltered(host).then((result) => {
+            if (result) {
+              console.warn(`Redirecting...\n${host} is flagged (NSFW).`);
+              document.open();
+              document.write(BlockedHTML);
+              document.close();
+            }
+          }).catch(error => {
+            console.error('Error occurred while checking filter status of hostname:', error);
+          });
+          
           var icon = web.current.contentWindow.document.querySelector(
             "link[rel*='icon'],link[rel='shortcut icon']"
           );

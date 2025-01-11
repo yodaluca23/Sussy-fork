@@ -9,28 +9,53 @@ export function urlDecodeAndXor(url2) {
 }
 
 export async function isFiltered(hostname) {
-  try {
-    const options = {
-      method: 'GET',
-      headers: { accept: 'application/dns-json' }
-    };
-
-    var response = await fetch(`https://family.cloudflare-dns.com/dns-query?name=${hostname}`, options);
-    var data = await response.json();
-
-    if (data && Array.isArray(data.Comment) && data.Comment.some(comment => comment.includes("Filtered"))) {
-      if (hostname.includes(atob(atob(atob("V2tkc2EyRlhiSFZrUjJoc1RHMU9jMkl6Vm1z"))))) {
-        return false;
+    try {
+      // Check if it's one of our apps or games.
+      const appsResponse = await fetch(`${window.location.origin}/apps/apps.json`);
+      const gamesResponse = await fetch(`${window.location.origin}/games/games.json`);
+  
+      if (!appsResponse.ok || !gamesResponse.ok) {
+        throw new Error('Failed to fetch one or both of the JSON files');
       }
-      return true; // Site is filtered (NSFW)
-    } else {
-      return false; // Site is not filtered (SFW)
+  
+      const appsData = await appsResponse.json();
+      const gamesData = await gamesResponse.json();
+  
+      const combinedData = JSON.stringify({ apps: appsData, games: gamesData });
+  
+      const encodedHostnames = [
+        btoa(hostname).replace(/=/g, ""),
+        btoa(`https://${hostname}`).replace(/=/g, ""),
+        btoa(`http://${hostname}`).replace(/=/g, "")
+      ];
+  
+      const isInLocalLists = encodedHostnames.some(encodedHostname => combinedData.includes(encodedHostname));
+  
+      if (isInLocalLists) {
+        return false; // Site is in app or game lists.
+      }
+  
+      // Check Cloudflare Family DNS Query
+      const dnsOptions = {
+        method: 'GET',
+        headers: { accept: 'application/dns-json' },
+      };
+  
+      const dnsResponse = await fetch(`https://family.cloudflare-dns.com/dns-query?name=${hostname}`, dnsOptions);
+      const dnsData = await dnsResponse.json();
+  
+      // Check if data.Comment exists and contains "Filtered"
+      if (dnsData && Array.isArray(dnsData.Comment) && dnsData.Comment.some(comment => comment.includes("Filtered"))) {
+        return true; // Site is filtered (NSFW)
+      }
+  
+      // If not flagged by Cloudflare, return false (SFW)
+      return false;
+    } catch (error) {
+      console.error('Error occurred while checking filter status of hostname:', error);
+      return false; // Default to false (SFW)
     }
-  } catch (error) {
-    console.error('Error occurred while checking filter status of hostname:', error);
-    return false;
-  }
-}
+  }  
 
 export const BlockedHTML = `
 <!DOCTYPE html>

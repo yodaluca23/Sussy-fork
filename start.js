@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs';
 if(!existsSync("./node_modules")) throw "Please install packages with 'yarn'";
 if(!existsSync('./dist')) throw "Please build with 'yarn build'";
 const require = createRequire(import.meta.url);
+import { adultFilterMiddleware } from './src/adultFilterMiddleware.js';
 
 // Config
 import { config as envconfig } from 'dotenv';
@@ -68,6 +69,8 @@ function autherror(req) {
     ? ("Credentials " + req.auth.user + ":" + req.auth.password + " rejected")
     : "Error"
 };
+
+app.use(adultFilterMiddleware);
 
 app.use(express.static('./dist', {
   extensions: ["html"]

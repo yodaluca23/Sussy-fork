@@ -74,3 +74,57 @@ export const BlockedHTML = `
 </body>
 </html>
 `;
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+export async function isFilteredNode(hostname) {
+  try {
+    // Determine the directory name of the current module
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+    // Construct absolute paths to the JSON files
+    const appsPath = path.join(__dirname, '../static/apps/apps.json');
+    const gamesPath = path.join(__dirname, '../static/games/games.json');
+
+    // Read and parse the JSON files
+    const appsData = JSON.parse(fs.readFileSync(appsPath, 'utf8'));
+    const gamesData = JSON.parse(fs.readFileSync(gamesPath, 'utf8'));
+
+    const combinedData = JSON.stringify({ apps: appsData, games: gamesData });
+
+    // Encode the hostname using Node's Buffer
+    const encodedHostnames = [
+      Buffer.from(hostname).toString('base64').replace(/=/g, ""),
+      Buffer.from(`https://${hostname}`).toString('base64').replace(/=/g, ""),
+      Buffer.from(`http://${hostname}`).toString('base64').replace(/=/g, "")
+    ];
+
+    // Check if any of the encoded hostnames appear in the combined JSON
+    const isInLocalLists = encodedHostnames.some(encodedHostname => combinedData.includes(encodedHostname));
+    if (isInLocalLists) {
+      return false; // Site is in app or game lists.
+    }
+
+    // Check Cloudflare Family DNS Query
+    const dnsOptions = {
+      method: 'GET',
+      headers: { accept: 'application/dns-json' },
+    };
+
+    const dnsResponse = await fetch(`https://family.cloudflare-dns.com/dns-query?name=${hostname}`, dnsOptions);
+    const dnsData = await dnsResponse.json();
+
+    // Check if dnsData.Comment exists and contains "Filtered"
+    if (dnsData && Array.isArray(dnsData.Comment) && dnsData.Comment.some(comment => comment.includes("Filtered"))) {
+      return true; // Site is filtered (NSFW)
+    }
+
+    // If not flagged by Cloudflare, return false (SFW)
+    return false;
+  } catch (error) {
+    console.error('Error occurred while checking filter status of hostname:', error);
+    return false; // Default to false (SFW)
+  }
+}

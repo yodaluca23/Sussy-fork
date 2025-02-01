@@ -40,6 +40,11 @@ const setupProxy = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      external: ['fs', 'path', 'url'],  // Exclude Node.js modules from bundling
+    },
+  },
   plugins: [
     react(),
     svgr({

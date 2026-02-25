@@ -9,6 +9,10 @@ import { config as envconfig } from 'dotenv';
 envconfig();
 const config = require("./config.json");
 
+// DNS content filter
+import DNSFilter from './dns-filter.js';
+const dnsFilter = DNSFilter.fromEnv();
+
 // Auth
 const auth = process.env['auth'] || "false";
 const username = process.env['username'] || "user";
@@ -88,14 +92,16 @@ app.use(function (req, res) {
 
 // Bad patch for dumb issue
 
-httpPatch.on('request', (req, res) => {
+httpPatch.on('request', async (req, res) => {
+  if (await dnsFilter.handleRequest(req, res)) return;
   if(bare.shouldRoute(req)) return bare.routeRequest(req, res);
   if(req.url.startsWith(proxy.prefix)) return proxy.request(req, res);
   if(req.url.startsWith(Rhodium.prefix)) return Rhodium.request(req, res);
   app(req, res);
 });
 
-httpPatch.on('upgrade', (req, socket, head) => {
+httpPatch.on('upgrade', async (req, socket, head) => {
+  if (await dnsFilter.handleUpgrade(req, socket)) return;
   if(bare.shouldRoute(req, socket, head)) return bare.routeUpgrade(req, socket, head);
   if(ws.shouldHandle()) return ws.handleUpgrade(req, socket, head, (s) => ws.emit('connection', s, req) );
   socket.end();
